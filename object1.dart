@@ -17,13 +17,13 @@ class MyNewClass {
   MyNewClass.peopleWithoutNumber({required this.age, this.name});
   @override
   String tostring(){
-  return "Name = $name ,Age = $age ,Phone=$phone";}
+  return "Name = $name ,Age = $age ,Phone=${phone==null ?"not provided! : phone}";}
 }
 
 void main(List<String> args) {
   MyNewClass class1 = MyNewClass(age: 22, phone: 9812365647);
   // MyNewClass class2 = MyNewClass.MyCustomCunstructor();
   MyNewClass class2 = MyNewClass.peopleWithoutNumber(age: 22, name: 'Elaheh');
-  print(class2.name);
-  print(class1.phone);
+  print(class2);
+  print(class1);
 }
