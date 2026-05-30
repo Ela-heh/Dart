@@ -15,6 +15,9 @@ class MyNewClass {
   //   print("This is my custom cunstructor");
   // }
   MyNewClass.peopleWithoutNumber({required this.age, this.name});
+  @override
+  String tostring(){
+  return "Name = $name ,Age = $age ,Phone=$phone";}
 }
 
 void main(List<String> args) {
