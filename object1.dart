@@ -1,7 +1,7 @@
 class MyNewClass {
   int? age;
   String? name;
-  late int phone;
+  int? phone;
   void sleep() {
     print("User is sleeping");
   }
@@ -16,8 +16,9 @@ class MyNewClass {
   // }
   MyNewClass.peopleWithoutNumber({required this.age, this.name});
   @override
-  String tostring(){
-  return "Name = $name ,Age = $age ,Phone=${phone==null ?"not provided! : phone}";}
+  String toString() {
+    return "Name = $name ,Age = $age ,Phone=${phone == null ? "not provided!" : phone}";
+  }
 }
 
 void main(List<String> args) {
