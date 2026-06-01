@@ -1,6 +1,6 @@
 class programmer {
   late String first, last, email, skill;
-  late double pay;
+  late var pay;
 
   programmer({
     required this.first,
@@ -14,6 +14,10 @@ class programmer {
     print(" $email Address is $first@gmail.com");
   }
 
+  double userpromotion(double value) {
+    return pay = pay * value;
+  }
+
   @override
   String toString() {
     return "name : $first ,last:$last , email : $email ,skill:$skill ,pay:$pay ";
@@ -25,8 +29,10 @@ void main(List<String> args) {
     first: 'Eli',
     last: 'Farajzadeh',
     skill: 'Dart',
-    pay: 500 / 000 / 000,
+    pay: 500,
   );
   print(p1);
   // p1.call();
+  p1.userpromotion(22.3);
+  print(p1);
 }
