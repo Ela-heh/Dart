@@ -3,7 +3,11 @@ class Animal {
     print("Eating..");
   }
 }
-
+mixin shingli on Hunter  {
+  void shigool(){
+    print("nanai");
+  }
+}
 mixin Hunter on Animal {
   void hunt() {
     print("Hunting..");
@@ -12,6 +16,7 @@ mixin Hunter on Animal {
 }
 
 class Lion extends Animal with Hunter {}
+class plants extends Animal with Hunter with shingli {}
 
 class Plant {
   void plant() {
