@@ -16,7 +16,7 @@ mixin Hunter on Animal {
 }
 
 class Lion extends Animal with Hunter {}
-class plants extends Animal with Hunter with shingli {}
+class plants extends Animal with Hunter , shingli {}
 
 class Plant {
   void plant() {
