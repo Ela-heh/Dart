@@ -11,5 +11,7 @@ class Password {
 }
 
 void main(List<String> args) {
-  print(Password.key());
+  for (int i = 1; i < 4; i++) {
+    print("No ($i) $Password.key()");
+  }
 }
